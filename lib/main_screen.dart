@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_playground/calculator/calculator_screen.dart';
 import 'package:flutter_playground/dice/dice_screen.dart';
 import 'package:flutter_playground/example1_screen.dart';
+import 'package:flutter_playground/story/story_screen.dart';
 
 class MainScreen extends StatelessWidget {
   @override
@@ -14,15 +15,19 @@ class MainScreen extends StatelessWidget {
         children: [
           ScreenButton(
             title: "1. Example",
-            pushWidget: ExampleScreen(),
+            widget: ExampleScreen(),
           ),
           ScreenButton(
             title: "2. Dice",
-            pushWidget: DiceScreen(),
+            widget: DiceScreen(),
           ),
           ScreenButton(
             title: "3. Calculator",
-            pushWidget: CalculatorScreen(),
+            widget: CalculatorScreen(),
+          ),
+          ScreenButton(
+            title: "4. Story",
+            widget: StoryScreen(),
           ),
         ],
       ),
@@ -32,12 +37,12 @@ class MainScreen extends StatelessWidget {
 
 class ScreenButton extends StatelessWidget {
   final String title;
-  final Widget pushWidget;
+  final Widget widget;
 
   const ScreenButton({
     Key key,
     this.title,
-    this.pushWidget,
+    this.widget,
   }) : super(key: key);
 
   @override
@@ -52,7 +57,7 @@ class ScreenButton extends StatelessWidget {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (BuildContext context) {
-                return pushWidget;
+                return widget;
               },
             ),
           );
