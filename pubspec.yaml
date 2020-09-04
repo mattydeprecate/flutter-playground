@@ -25,3 +25,9 @@ flutter:
   - images/
   - images/dice/
   - images/story/
+  - images/mi_card/
+
+  fonts:
+    - family: Pacifico
+      fonts:
+        - asset: fonts/Pacifico-Regular.ttf

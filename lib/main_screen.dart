@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_playground/calculator/calculator_screen.dart';
 import 'package:flutter_playground/dice/dice_screen.dart';
 import 'package:flutter_playground/example1_screen.dart';
+import 'package:flutter_playground/mi_card/mi_card_screen.dart';
 import 'package:flutter_playground/story/story_screen.dart';
 
 class MainScreen extends StatelessWidget {
@@ -28,6 +29,10 @@ class MainScreen extends StatelessWidget {
           ScreenButton(
             title: "4. Story",
             widget: StoryScreen(),
+          ),
+          ScreenButton(
+            title: "5. MiCard",
+            widget: MiCardScreen(),
           ),
         ],
       ),
