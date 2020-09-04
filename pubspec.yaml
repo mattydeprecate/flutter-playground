@@ -12,6 +12,7 @@ dependencies:
 
   cupertino_icons: ^0.1.3
   rflutter_alert: ^1.0.3
+  audioplayers: ^0.16.0
 
 dev_dependencies:
   flutter_test:
@@ -26,6 +27,8 @@ flutter:
   - images/dice/
   - images/story/
   - images/mi_card/
+  - images/magic_8_ball/
+  - assets/xylophone/
 
   fonts:
     - family: Pacifico
