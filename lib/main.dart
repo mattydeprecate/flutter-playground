@@ -11,6 +11,10 @@ class InitialScreen extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Playground',
       home: MainScreen(),
+      // initialRoute: "/",
+      // routes: {
+      //   "/": (context) => ExampleScreen(),
+      // },
     );
   }
 }

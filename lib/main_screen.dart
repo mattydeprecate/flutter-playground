@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/bmicalculator/bmicalculator_screen.dart';
+import 'package:flutter_playground/bmicalculator/screens/bmicalculator_screen.dart';
 import 'package:flutter_playground/calculator/calculator_screen.dart';
 import 'package:flutter_playground/dice/dice_screen.dart';
 import 'package:flutter_playground/example1_screen.dart';

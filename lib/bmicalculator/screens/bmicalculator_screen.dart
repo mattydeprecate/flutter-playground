@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/bmicalculator/calculator_brain.dart';
+import 'package:flutter_playground/bmicalculator/components/bottom_button.dart';
 import 'package:flutter_playground/bmicalculator/constants.dart';
-import 'package:flutter_playground/bmicalculator/icon_content.dart';
-import 'package:flutter_playground/bmicalculator/reusable_card.dart';
+import 'package:flutter_playground/bmicalculator/components/icon_content.dart';
+import 'package:flutter_playground/bmicalculator/screens/result_page.dart';
+import 'package:flutter_playground/bmicalculator/components/reusable_card.dart';
+import 'package:flutter_playground/bmicalculator/components/round_icon_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 enum Gender {
@@ -215,36 +219,26 @@ class _InputPageState extends State<InputPage> {
               ),
             ],
           )),
-          Container(
-            color: kBotoomContainerColor,
-            margin: EdgeInsets.only(top: 10),
-            width: double.infinity,
-            height: kBottomContainerHeight,
-          )
+          BottomButton(
+            buttonTitle: "CALCUATE",
+            onTap: () {
+              CalculatorBrain calc =
+                  CalculatorBrain(height: height, weight: weight);
+
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return ResultPage(
+                    bmiResult: calc.calculateBMI(),
+                    resultText: calc.getResult(),
+                    interpretation: calc.getInterpretation(),
+                  );
+                }),
+              );
+            },
+          ),
         ],
       ),
-    );
-  }
-}
-
-class RoundIconButton extends StatelessWidget {
-  RoundIconButton({@required this.icon, @required this.onPressed});
-
-  final IconData icon;
-  final Function onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-      child: Icon(icon),
-      onPressed: onPressed,
-      elevation: 6.0,
-      constraints: BoxConstraints.tightFor(
-        width: 56.0,
-        height: 56.0,
-      ),
-      shape: CircleBorder(),
-      fillColor: Color(0xFF4C4F5E),
     );
   }
 }
