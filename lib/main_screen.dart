@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/bmicalculator/screens/bmicalculator_screen.dart';
 import 'package:flutter_playground/calculator/calculator_screen.dart';
+import 'package:flutter_playground/clima/clima_screen.dart';
 import 'package:flutter_playground/dice/dice_screen.dart';
 import 'package:flutter_playground/example1_screen.dart';
 import 'package:flutter_playground/magic_8_ball/magic_ball_screen.dart';
@@ -53,6 +54,10 @@ class MainScreen extends StatelessWidget {
           ScreenButton(
             title: "9. BMI Calculaltor",
             widget: BMICalculatorScreen(),
+          ),
+          ScreenButton(
+            title: "10. Clima",
+            widget: ClimaScreen(),
           ),
         ],
       ),
