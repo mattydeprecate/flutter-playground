@@ -1,4 +1,3 @@
-import 'package:flutter_playground/clima/screens/city_screen.dart';
 import 'package:flutter_playground/clima/services/location.dart';
 import 'package:flutter_playground/clima/services/networking.dart';
 

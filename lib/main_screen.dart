@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/bitcoin/bitcoin_main.dart';
 import 'package:flutter_playground/bmicalculator/screens/bmicalculator_screen.dart';
 import 'package:flutter_playground/calculator/calculator_screen.dart';
 import 'package:flutter_playground/clima/clima_screen.dart';
@@ -58,6 +59,10 @@ class MainScreen extends StatelessWidget {
           ScreenButton(
             title: "10. Clima",
             widget: ClimaScreen(),
+          ),
+          ScreenButton(
+            title: "11. Bitcoin",
+            widget: BitcoinMain(),
           ),
         ],
       ),
