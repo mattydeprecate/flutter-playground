@@ -18,6 +18,9 @@ dependencies:
   http: ^0.12.2
   flutter_spinkit: "^4.1.2+1"
   animated_text_kit: ^3.1.0
+  firebase_core: ^0.5.3
+  firebase_auth: ^0.18.4+1
+  cloud_firestore: ^0.14.4
 
 dev_dependencies:
   flutter_test:
