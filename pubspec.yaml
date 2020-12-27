@@ -17,6 +17,7 @@ dependencies:
   geolocator: ^6.1.1
   http: ^0.12.2
   flutter_spinkit: "^4.1.2+1"
+  animated_text_kit: ^3.1.0
 
 dev_dependencies:
   flutter_test:
@@ -33,6 +34,7 @@ flutter:
   - images/mi_card/
   - images/magic_8_ball/
   - images/clima/
+  - images/flash_chat/
   - assets/xylophone/
 
   fonts:

@@ -11,6 +11,8 @@ import 'package:flutter_playground/quizzler/quizzler_screen.dart';
 import 'package:flutter_playground/story/story_screen.dart';
 import 'package:flutter_playground/xylophone/xylophone_screen.dart';
 
+import 'flash_chat/screens/welcome_screen.dart';
+
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -63,6 +65,10 @@ class MainScreen extends StatelessWidget {
           ScreenButton(
             title: "11. Bitcoin",
             widget: BitcoinMain(),
+          ),
+          ScreenButton(
+            title: "12. Flash Chat",
+            widget: WelcomeScreen(),
           ),
         ],
       ),
