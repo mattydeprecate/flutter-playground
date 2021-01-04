@@ -1,12 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/flash_chat/screens/chat_screen.dart';
 import 'package:flutter_playground/flash_chat/screens/login_screen.dart';
 import 'package:flutter_playground/flash_chat/screens/registration_screen.dart';
 import 'package:flutter_playground/main_screen.dart';
-
 import 'flash_chat/screens/welcome_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(InitialScreen());
 }
 
