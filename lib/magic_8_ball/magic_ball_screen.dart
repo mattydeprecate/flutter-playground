@@ -25,7 +25,7 @@ class _BallState extends State<Ball> {
 
   @override
   Widget build(BuildContext context) {
-    return FlatButton(
+    return TextButton(
       child:
           Center(child: Image.asset("images/magic_8_ball/ball$ballNumber.png")),
       onPressed: () {

@@ -94,7 +94,7 @@ class ScreenButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      child: RaisedButton(
+      child: ElevatedButton(
         child: Text(
           title,
         ),

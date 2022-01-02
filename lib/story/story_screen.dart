@@ -41,14 +41,16 @@ class _StoryScreenState extends State<StoryScreen> {
               ),
               Expanded(
                 flex: 2,
-                child: FlatButton(
+                child: TextButton(
                   onPressed: () {
                     //Choice 1 made by user.
                     setState(() {
                       storyBrain.nextStory(1);
                     });
                   },
-                  color: Colors.red,
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.red,
+                  ),
                   child: Text(
                     storyBrain.getChoice1(),
                     style: TextStyle(

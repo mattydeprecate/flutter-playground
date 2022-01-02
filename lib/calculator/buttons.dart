@@ -12,8 +12,10 @@ class CalculatorButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: FlatButton(
-        padding: EdgeInsets.all(0),
+      child: TextButton(
+        style: TextButton.styleFrom(
+          padding: EdgeInsets.all(0),
+        ),
         onPressed: handleOnPressed,
         child: Container(
           margin: EdgeInsets.all(4),
@@ -42,11 +44,8 @@ class NumberButton extends StatelessWidget {
   final int number;
   final void Function(int number) handleOnPressed;
 
-  const NumberButton({
-    Key key,
-    this.number,
-    this.handleOnPressed
-  }) : super(key: key);
+  const NumberButton({Key key, this.number, this.handleOnPressed})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -64,11 +63,8 @@ class OperationButton extends StatelessWidget {
   final String operation;
   final void Function(String operation) handleOnPressed;
 
-  const OperationButton({
-    Key key,
-    this.operation,
-    this.handleOnPressed
-  }) : super(key: key);
+  const OperationButton({Key key, this.operation, this.handleOnPressed})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
