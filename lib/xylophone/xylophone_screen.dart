@@ -1,9 +1,9 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audio_cache.dart';
 
 class XylophoneScreen extends StatelessWidget {
   void playSound(int soundNumber) {
-    final player = AudioCache();
+    final player = AudioCache(); 
     player.play("xylophone/note$soundNumber.wav");
   }
 
